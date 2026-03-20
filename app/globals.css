@@ -584,12 +584,18 @@
       transparent,
       color-mix(in srgb, var(--color-primary) 35%, transparent)
     );
+    transform: translateX(-150%) skewX(-20deg);
     transition: all 0.7s ease-in-out;
-    transform: translateX(-130%) skewX(-20deg);
+    @media (min-width: 768px) {
+      transform: translateX(-130%) skewX(-20deg);
+    }
     pointer-events: none;
   }
   &:hover::after {
-    transform: translateX(130%) skewX(-20deg);
+    transform: translateX(150%) skewX(-20deg);
+    @media (min-width: 768px) {
+      transform: translateX(-130%) skewX(-20deg);
+    }
   }
 }
 /* 6- Base Layer for body and html elements */
