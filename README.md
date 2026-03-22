@@ -527,9 +527,23 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## Acknowledgements
 
-- Many Thanks To [Pedro Machado](https://github.com/machadop1407/react-tailwind-personal-portfolio).
-- Design and color palette inspired by **Pedro Machado**.
+- Design and color palette inspired by **[Pedro Machado](https://github.com/machadop1407/react-tailwind-personal-portfolio)**.
 - Note: This Project is a complete technical rewrite using **Next.js**, **TypeScript**, **modern React Patterns**, and the **App Router** for enhanced performance and Server Side Rendering (SSR).
+
+| Aspect                                   | [Pedro`s Approach](https://github.com/machadop1407/react-tailwind-personal-portfolio) | My Approach                                                                                       |
+| ---------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| 1. &#9989; Framework                     | React + Vite                                                                          | Next.js 16                                                                                        |
+| 2. &#9989; Language                      | JavaScript                                                                            | TypeScript                                                                                        |
+| 3. &#9989; CSS                           | TailwindCSS V3                                                                        | TailwindCSS V4                                                                                    |
+| 4. &#9989; Rendering                     | Client-side                                                                           | Server Side Rendering (SSR)                                                                       |
+| 5. &#9989; Form Handling                 | Basic                                                                                 | Advanced React Hook (useActionState)                                                              |
+| 6. &#9989; Form Validation               | None                                                                                  | Zod Library (simplicity)                                                                          |
+| 7. &#9989; Email Provider                | Emailjs Basic                                                                         | Emailjs + RESTful API (POST)                                                                      |
+| 8. &#9989; Error Handling                | None                                                                                  | Full error boundaries (error, global-error)                                                       |
+| 9. &#9989; Meta Tags SEO                 | Basic (title, description)                                                            | Advanced (title, description, keywords and authors, openGraph and twitter, robots and alternates) |
+| 10. &#9989; Performance and Optimization | Basic                                                                                 | Advanced (Image, Link, Form)                                                                      |
+| 11. &#9989; Production-ready             | Learning-project                                                                      | Production-grade                                                                                  |
+| 12. &#9989; Design and Color Palette     | Pedro`s Palette                                                                       | Pedro`s Palette                                                                                   |
 
 ---
 
