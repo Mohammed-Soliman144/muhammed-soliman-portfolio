@@ -14,6 +14,7 @@
 - [Deployment](#deployment)
 - [Key Components](#key-component)
 - [Performance Optimizations and Code Quality](#performance-optimizations)
+- [Acknowledgements](#acknowledgements)
 - [License](#license)
 - [Contact](#contact)
 
