@@ -41,22 +41,22 @@ export default function Hero(){
         {name: "Cpp", icon: CplusplusPlainIcon, size: 25 },
         {name: "MySql", icon: MysqlPlainWordmarkIcon, size: 35}
     ]
-    return <section id="hero" className="overflow-hidden">
+    return <section id="hero" className="hero-section overflow-hidden">
         <div className="container relative grid grid-cols-1 grid-rows-1 lg:grid-rows-1 lg:grid-cols-2 place-content-between place-items-center gap-12 py-8 w-full h-full">
             <article className="hero-left col-span-2 place-items-start place-content-start lg:col-span-1 space-y-8 flex flex-col justifty-start items-start">
-                <div className="relative z-0 badge w-fit glass px-5 py-2 text-[12px] md:text-[14.5px] capitalize text-primary rounded-full">
+                <div className="relative z-0 badge w-fit glass px-5 py-2 text-[12px] md:text-[14.5px] capitalize text-primary rounded-full animate-fade-out" style={{"--duration-fade": "500ms"} as React.CSSProperties}>
                     <p className="relative before:absolute before:content[''] before:w-2 before:h-2 before:rounded-full before:-left-[14px] before:top-1/2 before:-translate-y-1/2 before:bg-primary before:z-1 before:animate-pulse">junior front end developer<span className="pl-2 capitalize relative after:absolute after:content[''] after:w-1 after:h-1 after:rounded-full after:left-1 after:top-[60%] after:-translate-y-1/2 after:bg-primary after:z-1"> react nextjs specialist</span></p>
                 </div>
-                <h1 className="text-white font-bold font-primary text-4xl md:text-5xl first-letter:uppercase leading-normal">crafting <span className="text-primary">digital</span> experiences with <span  className="font-secondary italic font-normal">precision.</span></h1>
+                <h1 className="text-white font-bold font-primary text-4xl md:text-5xl first-letter:uppercase leading-normal animate-fade-out" style={{"--duration-fade": "600ms"} as React.CSSProperties}>crafting <span className="text-primary">digital</span> experiences with <span  className="font-secondary italic font-normal">precision.</span></h1>
                 {/* Image Hero Background and black ovelay */}
                 <div className="image absolute inset-0 -z-1 w-screen left-1/2 -ml-[50vw] -translate-x-0"> 
                     <Image src={imageHero} alt="Hero Image"  className="object-scale-down aspect-4/8 lg:object-cover lg:aspect-10/5"/>
                     <div className="overlay bg-background opacity-80 absolute top-0 left-0 right-0 z-1 object-scale-down aspect-4/8 lg:object-cover lg:aspect-10/5"></div>
                 </div>
-                <p className='font-primary text-foreground/70 capitalize leading-normal text-lg break-words whitespace-normal text-pretty hyphens-auto'>
+                <p className='font-primary text-foreground/70 capitalize leading-normal text-lg break-words whitespace-normal text-pretty hyphens-auto animate-fade-out' style={{"--duration-fade": "700ms"} as React.CSSProperties}>
                     hi, i{`'`}m muhammed soliman — React & Next.js developer building production-grade web applications. Specialist in server components, optimistic UI, and full-stack patterns.
                 </p>
-                <ul className='sm:flex sm:flex-row justify-start sm:items-center gap-4 flex flex-col items-start'>
+                <ul className='sm:flex sm:flex-row justify-start sm:items-center gap-4 flex flex-col items-start animate-fade-out' style={{"--duration-fade": "800ms"} as React.CSSProperties}>
                     <li>
                         <CustomLink size='lg' classes='shadow-xl shadow-primary/25 text-xl font-normal flex justify-center items-center gap-1 w-55 h-17 animate-fade-loop' href='#contact' >
                         <span className='group'>contact me <ArrowRight size={25} className='inline-flex'/></span>
@@ -69,7 +69,7 @@ export default function Hero(){
                     </li>
                 </ul>
                 {/* Social Links Navigation */}
-                <nav aria-label="social-links" className='flex justifty-center items-center gap-5'>
+                <nav aria-label="social-links" className='flex justifty-center items-center gap-5 animate-fade-out' style={{"--duration-fade": "800ms"} as React.CSSProperties}>
                     <p id="social-label" className='text-foreground/70 text-sm capitalize font-bold'>follow me:</p>
                     <ul aria-labelledby="social-label" className='flex justifty-center items-center gap-3'>
                         <li><a href="https://github.com/Mohammed-Soliman144"><FiGithub size={45} className='text-foreground p-3 rounded-full bg-surface hover:text-primary hover:bg-primary/15 transition-all duration-400'/></a></li>
@@ -79,7 +79,7 @@ export default function Hero(){
                 </nav>
             </article>
             {/* Background Image */}
-            <figure className='hero-right col-span-2 lg:col-span-1 object-cover aspect-4/6 max-h-[550px] animate-image'>
+            <figure className='hero-right col-span-2 lg:col-span-1 object-cover aspect-4/6 max-h-[550px] animate-image animate-fade-out' style={{"--duration-fade": "900ms"} as React.CSSProperties}>
                 <Image src={imagePortfolio} alt='Portfolio Image' className='backdrop-blur-xl rounded-3xl border-12 border-primary/10'/>
                 <figcaption>
                     <p className='absolute -top-8 -left-3 pl-4 w-25 h-22 bg-surface/70  rounded-2xl text-foreground/70 capitalize flex flex-col justify-center items-start gap-1 animate-bounce-slow text-sm font-semibold glass opacity-80'><span className='text-primary font-bold text-2xl'>1+</span>years exp.</p>

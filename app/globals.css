@@ -89,6 +89,19 @@
       transform: translateY(0);
     }
   }
+  /* fade-out  */
+  @keyframes fade-out {
+    0% {
+      opacity: 0;
+      filter: blur(20px);
+      transform: translateY(35px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+    }
+  }
 
   /* pulse-image */
   @keyframes pulse-image {
@@ -209,6 +222,11 @@
 
 @utility animate-fade {
   animation: fade-in 800ms ease-in-out both;
+}
+
+@utility animate-fade-out {
+  transition: all var(--duration-fade, 300ms) ease-in-out;
+  animation: fade-out var(--duration-fade, 300ms) ease-in-out forwards;
 }
 
 @utility animate-image {
@@ -586,18 +604,13 @@
     );
     transform: translateX(-150%) skewX(-20deg);
     transition: all 0.7s ease-in-out;
-    @media (min-width: 768px) {
-      transform: translateX(-130%) skewX(-20deg);
-    }
     pointer-events: none;
   }
   &:hover::after {
     transform: translateX(150%) skewX(-20deg);
-    @media (min-width: 768px) {
-      transform: translateX(-130%) skewX(-20deg);
-    }
   }
 }
+
 /* 6- Base Layer for body and html elements */
 @layer base {
   /* body */

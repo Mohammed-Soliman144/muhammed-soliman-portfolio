@@ -16,13 +16,13 @@ import CustomLink from '@/app/components/ui/CustomLink'
 
 /* Projects Component */
 export default function Projects(){
-    return <section id='projects' className='container pt-32 flex flex-col justify-start flex-wrap items-center gap-15'>
-        <article className='header text-center space-y-4'>
-            <span className='block tracking-wider uppercase text-base text-primary font-semibold'>featured work</span>
-            <h2 className='font-secondary text-3xl font-bold md:text-5xl md:font-extrabold normal-case tracking-wide text-foreground italic leading-normal'><span className='inline-block font-primary text-primary pr-2 not-italic first-letter:uppercase tracking-tight'>projects that</span>make an impact.</h2>
-            <p className='text-foreground/75 text-base md:text-lg normal-case first-letter:capitalize leading-normal break-words whitespace-normal text-pretty hyphens-auto'>A selection of projects that reflect my growth as a developer — from interactive web applications to practical tools built to solve real-world problems.</p>
-        </article>
-        <div className="projects grid grid-cols-1 gap-y-15 place-items-start xl:grid-cols-2 xl:gap-15 xl:place-items-stretch place-content-center">
+    return <section id='projects' className='project-section'>
+        <div className='container pt-32 projects grid grid-cols-1 gap-10 place-items-start xl:grid-cols-2 xl:place-items-stretch place-content-center'>
+            <article className='header text-center space-y-4 col-span-2 mb-10'>
+                <span className='block tracking-wider uppercase text-base text-primary font-semibold'>featured work</span>
+                <h2 className='font-secondary text-3xl font-bold md:text-5xl md:font-extrabold normal-case tracking-wide text-foreground italic leading-normal'><span className='inline-block font-primary text-primary pr-2 not-italic first-letter:uppercase tracking-tight'>projects that</span>make an impact.</h2>
+                <p className='text-foreground/75 text-base md:text-lg normal-case first-letter:capitalize leading-normal break-words whitespace-normal text-pretty hyphens-auto'>A selection of projects that reflect my growth as a developer — from interactive web applications to practical tools built to solve real-world problems.</p>
+            </article>
             <article className="col-span-2 xl:col-span-1 flex flex-col justify-center items-start background-card-mix ring ring-border rounded-2xl shadow-xl/30 overflow-hidden group relative shimmer-shine">
                 <figure>
                     <Image src={groceryImage} alt='Grocery Ecommerce Image' className='aspect-4/3 object-fill group-hover:scale-105 rounded-tl-2xl rounded-tr-2xl transition-transform duration-700 group'/>
@@ -193,6 +193,3 @@ export default function Projects(){
         </div>
     </section>
 }
-
-
-

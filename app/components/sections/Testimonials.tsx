@@ -56,7 +56,7 @@ export default function Testimonials() {
     const moveToIndex = (index: number) => {
         setCurrentIndex(index % reviewsList.length);
     }
-    return <section id='testimonials' className='overlay-carousel py-15'>
+    return <section id='testimonials' className='testimonial-section overlay-carousel py-15'>
         <div className="container flex flex-col justify-center items-center gap-5 overflow-hidden">
             <article className='testimonials-header text-center'>
                 <span className='block tracking-wider uppercase text-base text-primary font-semibold'>what people say</span>
