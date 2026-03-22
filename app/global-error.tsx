@@ -48,7 +48,7 @@ export default function GlobalError({error, reset} : ErrorProps){
             <main className="page-wrapper grid grid-cols-[minmax(0,1fr)] grid-rows-[auto_1fr_auto]">
                 <section aria-live="assertive" role="alert" className="relative w-full h-full bg-background p-6 flex justify-center items-start">
                     <div className="flex flex-col justify-center items-center gap-8">
-                        <span className="text-primary text-[5rem] md:text-[8rem] lg:text-[12rem] leading-none font-black">Error!</span>
+                        <span className="text-primary text-[5rem] md:text-[8rem] lg:text-[12rem] leading-none font-black font-secondary tracking-wider">Error!</span>
                         <h1 className="text-white text-4xl md:text-5xl font-extrabold text-center">Critical Error Occurred!</h1>
                         {
                             process.env.NODE_ENV === "development" ?
@@ -57,10 +57,10 @@ export default function GlobalError({error, reset} : ErrorProps){
                         }
                         <div className="buttons flex justify-center items-center gap-8">
                             <Button size="lg" classes="cursor-pointer" onClicked={reload}>
-                                <span className="font-extrabold text-base md:text-lg">Try Again</span>
+                                <span className="font-bold text-base">Try Again</span>
                             </Button>
                             <Button size="lg" classes="cursor-pointer" onClicked={()=> window.location.reload()}>
-                                <span className="font-extrabold text-base md:text-lg">Refresh Page</span>
+                                <span className="font-bold text-base">Refresh Page</span>
                             </Button>
                         </div>
                     </div>

@@ -12,7 +12,7 @@ export default function SimulateError() {
     // Destroy Rendering of Component if error is true
     if(error) throw error
 
-    return <Button size="lg" classes="cursor-pointer" onClicked={() => {
+    return <Button size="sm" classes="cursor-pointer ml-4" onClicked={() => {
         try {
             /* when component hydrate after mounted on the browser then clicks throw error */
             throw new Error("Simulate Error")

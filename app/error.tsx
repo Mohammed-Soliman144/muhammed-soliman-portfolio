@@ -29,7 +29,7 @@ export default function ErrorBoundary({error, reset} : ErrorProps) {
         console.error(error)
     }, [error])
 
-    return <section aria-live="assertive" role="alert" className="relative w-full min-h-screen bg-background p-6 flex justify-center items-start">
+    return <section aria-live="assertive" role="alert" className="relative w-full h-full bg-background p-6 flex justify-center items-start">
         <div className="flex flex-col justify-center items-center gap-8">
             <span className="text-primary text-[5rem] md:text-[8rem] lg:text-[12rem] leading-none font-black">Ooops!</span>
             <h2 className="text-white text-4xl md:text-5xl font-extrabold text-center">Something went wrong!</h2>
